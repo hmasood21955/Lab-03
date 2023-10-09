@@ -43,7 +43,14 @@ int main(int argc, char **argv) {
     result= a/b;
     printf("%f",result);
   } else if(choice == 5) {
-    //TODO: handle this case (minimum)
+    if(a<b)
+    {
+      printf("mini %f",a);
+    }
+    else
+    {
+      printf("mini %f",b);
+    }
   } else if(choice == 6) {
     //TODO: handle this case (log_a(b))
   } else {
