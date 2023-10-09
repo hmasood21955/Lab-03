@@ -51,9 +51,19 @@ int main(int argc, char **argv) {
     {
       printf("mini %f",b);
     }
-  } else if(choice == 6) {
-    //TODO: handle this case (log_a(b))
-  } else {
+  } else if(choice == 6) 
+  {
+    if (a > 0 && b > 0) {
+      result = log(b) / log(a);  // Calculate log_a(b)
+      printf("log_a(b): %f\n", result);
+    } 
+    else
+   {
+      printf("Both 'a' and 'b' must be greater than 0 for logarithm calculation.\n");
+    }
+  } 
+  else 
+  {
     printf("Please input a valid operator next time");
   }
 
