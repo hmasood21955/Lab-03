@@ -29,6 +29,17 @@ int main(int argc, char **argv) {
   }
 
   //TODO: compute the tax, child credit, and total tax here
+if(agi>=0 && agi<=50000)
+{
+  tax=agi*0.10;
+  printf("%lf",tax);
+}
+else
+{
+  printf("%lf",tax);
+}
+childCredit=numChildren*1000;
+totalTax=childCredit-tax;
 
   printf("AGI:          $%10.2f\n", agi);
   printf("Tax:          $%10.2f\n", tax);
